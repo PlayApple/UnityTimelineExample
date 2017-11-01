@@ -1,0 +1,267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 337831424, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: Conversation
+  m_EditorClassIdentifier: 
+  m_NextId: 0
+  m_Tracks:
+  - {fileID: 114285673885554164}
+  m_FixedDuration: 0
+  m_EditorSettings:
+    fps: 60
+  m_DurationMode: 0
+--- !u!114 &114164453464551910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330b6955bbe684d4783f19b2487494d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasObject:
+    exposedName: f32daea3b24524f3098f53d21524702d
+    defaultValue: {fileID: 0}
+  dialogueBoxDisplay:
+    exposedName: 403259476437544afacdc093b5886974
+    defaultValue: {fileID: 0}
+  dialogueTextDisplay:
+    exposedName: 954649fe8dfa14383ac287d2eba9c874
+    defaultValue: {fileID: 0}
+  dialogueBoxColor: {r: 0.99264705, g: 0, b: 0, a: 1}
+  dialogueString: "\u6211\u53EB\u505A\u7C73\u5229\u8D1D\u4E1D\uFF0C\u90A3\u4E9B\u8001\u5987\u4EBA\u4EE5\u524D\u88AB\u79F0\u4F5C\u9632\u706B\u5973\uFF0C\u6211\u7684\u5DE5\u4F5C\u5C31\u662F\u7167\u6599\u5979\u4EEC\u3002\u6211\u7684\u6BCD\u4EB2\u548C\u7956\u6BCD\uFF0C\u4EE5\u53CA\u5176\u4ED6\u5148\u4EBA\u90FD\u8D1F\u8D23\u90A3\u4E2A\u5DE5\u4F5C\x03"
+--- !u!114 &114285673885554164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778877366, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: Playable Track
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Start: 0.2833333333333333
+    m_ClipIn: 0
+    m_Asset: {fileID: 114164453464551910}
+    m_UnderlyingAsset: {fileID: 114164453464551910}
+    m_Duration: 1.7333333333333334
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114285673885554164}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: ConversationAsset
+    m_Version: 1
+  - m_Start: 2.0166666666666666
+    m_ClipIn: 0
+    m_Asset: {fileID: 114388871041076416}
+    m_UnderlyingAsset: {fileID: 114164453464551910}
+    m_Duration: 0.5333333333333333
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114285673885554164}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: ConversationAsset
+    m_Version: 1
+  - m_Start: 2.549999999999998
+    m_ClipIn: 0
+    m_Asset: {fileID: 114678373077168862}
+    m_UnderlyingAsset: {fileID: 114678373077168862}
+    m_Duration: 0.31666666666666665
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114285673885554164}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: EventSystemAsset
+    m_Version: 1
+  - m_Start: 2.8666666666666636
+    m_ClipIn: 0
+    m_Asset: {fileID: 114565830377918104}
+    m_UnderlyingAsset: {fileID: 114164453464551910}
+    m_Duration: 1.5
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114285673885554164}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: ConversationAsset
+    m_Version: 1
+--- !u!114 &114388871041076416
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330b6955bbe684d4783f19b2487494d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasObject:
+    exposedName: 19d5c2f76aeb649b18ab97f2a6b35bb9
+    defaultValue: {fileID: 0}
+  dialogueBoxDisplay:
+    exposedName: 1322f0b6206dc40ffb08bb1d96facace
+    defaultValue: {fileID: 0}
+  dialogueTextDisplay:
+    exposedName: 6cea53a0e4ff64ebf8fdc0d5d7906ca5
+    defaultValue: {fileID: 0}
+  dialogueBoxColor: {r: 0.99264705, g: 0, b: 0, a: 1}
+  dialogueString: "\u6211\u53EB\u505A\u7C73\u5229\u8D1D\u4E1D\uFF0C\u90A3\u4E9B\u8001\u5987\u4EBA\u4EE5\u524D\u88AB\u79F0\u4F5C\u9632\u706B\u5973\uFF0C\u6211\u7684\u5DE5\u4F5C\u5C31\u662F\u7167\u6599\u5979\u4EEC\u3002\u6211\u7684\u6BCD\u4EB2\u548C\u7956\u6BCD\uFF0C\u4EE5\u53CA\u5176\u4ED6\u5148\u4EBA\u90FD\u8D1F\u8D23\u90A3\u4E2A\u5DE5\u4F5C\x03
+    \ [\u70B9\u51FB\u7EE7\u7EED]"
+--- !u!114 &114565830377918104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330b6955bbe684d4783f19b2487494d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasObject:
+    exposedName: daef141e263604803b285444193c826f
+    defaultValue: {fileID: 0}
+  dialogueBoxDisplay:
+    exposedName: 29b476c869a1a4e479c9338482b07e94
+    defaultValue: {fileID: 0}
+  dialogueTextDisplay:
+    exposedName: 9644343bb102e49fe8f4be45d0d0d432
+    defaultValue: {fileID: 0}
+  dialogueBoxColor: {r: 0, g: 1, b: 0.17241383, a: 1}
+  dialogueString: "\u90A3\u4E9B\u8001\u592B\u4EBA\u8EAB\u8D1F\u5B88\u62A4\u706B\u7684\u7279\u522B\u804C\u8D23\uFF0C\u53EF\u662F\u73B0\u5728\u5C31\u8FDE\u5979\u4EEC\u8981\u5B88\u62A4\u7684\u706B\u90FD\u8981\u7184\u706D\u4E86\xB7\xB7\xB7\xB7\xB7\xB7\u7136\u540E\xB7\xB7\xB7\xB7\xB7\xB7\u6E38\u9B42\u628A\u8FD9\u4E2A\u56FD\u5BB6\xB7\xB7\xB7\xB7\xB7\xB7\x03"
+--- !u!114 &114678373077168862
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7a2ffc486044a58283d7e30f700ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimelineEventTrigger:
+    exposedName: eceed7b725b9149a2a36cd03b9d1d7ab
+    defaultValue: {fileID: 0}
