@@ -2,3 +2,5 @@ Example/Library/
 Example/Temp/
 Example/obj/
 *.csproj
+
+Example/Example.userprefs
