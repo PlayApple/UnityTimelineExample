@@ -11,10 +11,11 @@ public class ConversationAsset : PlayableAsset {
 	public ExposedReference<Image> dialogueBoxDisplay;
 	public ExposedReference<Text> dialogueTextDisplay;
 
-	public Color dialogueBoxColor;
 
+	public Color dialogueBoxColor;
 	[Multiline(3)]
 	public string dialogueString;
+	public Sprite npcHead;
 
 	public override Playable CreatePlayable (PlayableGraph graph, GameObject owner)
 	{
@@ -26,7 +27,7 @@ public class ConversationAsset : PlayableAsset {
 		var _dialogueTextDisplay = dialogueTextDisplay.Resolve (playable.GetGraph ().GetResolver ());
 
 
-		conversationPlayable.Initialize (_canvasObject, _dialogueBoxDisplay, _dialogueTextDisplay, dialogueBoxColor, dialogueString);
+		conversationPlayable.Initialize (_canvasObject, _dialogueBoxDisplay, _dialogueTextDisplay, npcHead, dialogueBoxColor, dialogueString);
 		return playable;
 	}
 }

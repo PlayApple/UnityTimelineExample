@@ -10,39 +10,28 @@ public class ConversationPlayable : PlayableBehaviour
 	private Text _dialogTextDisplay;
 	private Color _color;
 	private string _textString;
+	private Sprite _npcHead;
 
-	public void Initialize(GameObject canvasObject, Image dialogueBoxDisplay, Text dialogTextDisplay, Color color, string textString)
+	public void Initialize(GameObject canvasObject, Image dialogueBoxDisplay, Text dialogTextDisplay, Sprite npcHead, Color color, string textString)
 	{
 		_canvasObject = canvasObject;
 		_dialogueBoxDisplay = dialogueBoxDisplay;
 		_dialogTextDisplay = dialogTextDisplay;
 		_color = color;
 		_textString = textString;
+		_npcHead = npcHead;
 	}
 
 	public override void OnBehaviourPlay(Playable playable, FrameData info) 
 	{
-		Debug.Log ("OnBehaviourPlay");
 		_canvasObject.SetActive (true);
-		_dialogueBoxDisplay.color = _color;
+		_dialogTextDisplay.color = _color;
 		_dialogTextDisplay.text = _textString;
+		_dialogueBoxDisplay.sprite = _npcHead;
 	}
 
-	public override void OnBehaviourPause(Playable playable, FrameData info) 
+	public override void OnBehaviourPause (Playable playable, FrameData info)
 	{
-		Debug.Log ("OnBehaviourPause");
-//		_canvasObject.SetActive (false);
-	}
-
-	public override void OnPlayableDestroy (Playable playable)
-	{
-		base.OnPlayableDestroy (playable);
-		Debug.Log ("OnPlayableDestroy");
-	}
-
-	public override void OnGraphStop (Playable playable)
-	{
-		base.OnGraphStop (playable);
-		Debug.Log ("OnGraphStop");
+		_canvasObject.SetActive (false);
 	}
 }

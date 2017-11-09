@@ -16,6 +16,7 @@ MonoBehaviour:
   - {fileID: 114804494871974348}
   - {fileID: 114465186864113238}
   - {fileID: 114169021271427264}
+  - {fileID: 114352923791550424}
   m_FixedDuration: 0
   m_EditorSettings:
     fps: 60
@@ -39,6 +40,29 @@ MonoBehaviour:
   m_Children:
   - {fileID: 114920023844829658}
   m_Clips: []
+--- !u!114 &114185182842081700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330b6955bbe684d4783f19b2487494d8, type: 3}
+  m_Name: ConversationAsset
+  m_EditorClassIdentifier: 
+  canvasObject:
+    exposedName: 55d6cba10b0eb43ab83498b9d12f4e4c
+    defaultValue: {fileID: 0}
+  dialogueBoxDisplay:
+    exposedName: 72e5b55b900914fb7804642c5e39a371
+    defaultValue: {fileID: 0}
+  dialogueTextDisplay:
+    exposedName: c60c5de0490d5458a943187a85771e59
+    defaultValue: {fileID: 0}
+  dialogueBoxColor: {r: 0, g: 1, b: 0, a: 1}
+  dialogueString: No thanks! I prefer Coffee!
+  npcHead: {fileID: 21300000, guid: 332ca320b241242db92bd7701fa5b2ca, type: 3}
 --- !u!114 &114198158962832218
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -160,6 +184,198 @@ MonoBehaviour:
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
   m_RemoveStartOffset: 1
+--- !u!114 &114352923791550424
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778877366, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: Playable Track
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Start: 1.5833333333333333
+    m_ClipIn: 0
+    m_Asset: {fileID: 114670817822859126}
+    m_UnderlyingAsset: {fileID: 114670817822859126}
+    m_Duration: 3.2
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114352923791550424}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: ConversationAsset
+    m_Version: 1
+  - m_Start: 4.783333333333333
+    m_ClipIn: 0
+    m_Asset: {fileID: 114479826339724644}
+    m_UnderlyingAsset: {fileID: 114670817822859126}
+    m_Duration: 3.2
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114352923791550424}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: ConversationAsset
+    m_Version: 1
+  - m_Start: 7.983333333333333
+    m_ClipIn: 0
+    m_Asset: {fileID: 114185182842081700}
+    m_UnderlyingAsset: {fileID: 114670817822859126}
+    m_Duration: 3.2
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114352923791550424}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: ConversationAsset
+    m_Version: 1
 --- !u!114 &114465186864113238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -179,6 +395,29 @@ MonoBehaviour:
   m_Children:
   - {fileID: 114480120193985310}
   m_Clips: []
+--- !u!114 &114479826339724644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330b6955bbe684d4783f19b2487494d8, type: 3}
+  m_Name: ConversationAsset
+  m_EditorClassIdentifier: 
+  canvasObject:
+    exposedName: db3c3d131342b40f28f7483093683f61
+    defaultValue: {fileID: 0}
+  dialogueBoxDisplay:
+    exposedName: 79af2bfb137b64d6e99cc877b1bc1da5
+    defaultValue: {fileID: 0}
+  dialogueTextDisplay:
+    exposedName: a191df1313269497e8e9205ae5e41163
+    defaultValue: {fileID: 0}
+  dialogueBoxColor: {r: 1, g: 0, b: 0, a: 1}
+  dialogueString: Red Herring and Radioactive Tuna.
+  npcHead: {fileID: 21300000, guid: 3fa1b5af463db4a78a4eba9d11bd4bcb, type: 3}
 --- !u!114 &114480120193985310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -255,6 +494,29 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: Side-Shot
     m_Version: 1
+--- !u!114 &114670817822859126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330b6955bbe684d4783f19b2487494d8, type: 3}
+  m_Name: ConversationAsset
+  m_EditorClassIdentifier: 
+  canvasObject:
+    exposedName: d0eca52ae2221451bb59aa0d14540cb3
+    defaultValue: {fileID: 0}
+  dialogueBoxDisplay:
+    exposedName: dbf15e4dd548444ed8543600d987fe48
+    defaultValue: {fileID: 0}
+  dialogueTextDisplay:
+    exposedName: 871bd33c9739946938d56dea4c82d08e
+    defaultValue: {fileID: 0}
+  dialogueBoxColor: {r: 0, g: 1, b: 0, a: 1}
+  dialogueString: Hello! What do you have for sale?
+  npcHead: {fileID: 21300000, guid: 332ca320b241242db92bd7701fa5b2ca, type: 3}
 --- !u!114 &114756359721565642
 MonoBehaviour:
   m_ObjectHideFlags: 1
