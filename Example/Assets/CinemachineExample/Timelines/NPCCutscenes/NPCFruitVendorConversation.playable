@@ -16,6 +16,7 @@ MonoBehaviour:
   - {fileID: 114138979137913206}
   - {fileID: 114106219188643702}
   - {fileID: 114980940685084674}
+  - {fileID: 114720097953296132}
   m_FixedDuration: 0
   m_EditorSettings:
     fps: 60
@@ -122,6 +123,206 @@ MonoBehaviour:
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
   m_RemoveStartOffset: 1
+--- !u!114 &114365373926080132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330b6955bbe684d4783f19b2487494d8, type: 3}
+  m_Name: ConversationAsset
+  m_EditorClassIdentifier: 
+  canvasObject:
+    exposedName: c81d730d7239c4b448af1cb28b8861d9
+    defaultValue: {fileID: 0}
+  dialogueBoxDisplay:
+    exposedName: 81fe5aed5bec34e36b0ff18d728fe4ed
+    defaultValue: {fileID: 0}
+  dialogueTextDisplay:
+    exposedName: 4b40e35cdb2c1430491f93cee0bfad85
+    defaultValue: {fileID: 0}
+  dialogueBoxColor: {r: 0, g: 1, b: 0, a: 1}
+  dialogueString: So Lazy...
+  npcHead: {fileID: 21300000, guid: 332ca320b241242db92bd7701fa5b2ca, type: 3}
+--- !u!114 &114388370003496482
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330b6955bbe684d4783f19b2487494d8, type: 3}
+  m_Name: ConversationAsset
+  m_EditorClassIdentifier: 
+  canvasObject:
+    exposedName: 9a72b36f8353547b1bccd3094dc868f8
+    defaultValue: {fileID: 0}
+  dialogueBoxDisplay:
+    exposedName: 96c603e7f19d3408d91bfb75cea41189
+    defaultValue: {fileID: 0}
+  dialogueTextDisplay:
+    exposedName: d1d60b4d5ab0a43e8a3fe8f9395656c9
+    defaultValue: {fileID: 0}
+  dialogueBoxColor: {r: 0, g: 1, b: 0, a: 1}
+  dialogueString: I assume it is this guy?
+  npcHead: {fileID: 21300000, guid: 332ca320b241242db92bd7701fa5b2ca, type: 3}
+--- !u!114 &114429499786943730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778877366, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: Playable Track
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 114720097953296132}
+  m_Children: []
+  m_Clips:
+  - m_Start: 1.0166666666666666
+    m_ClipIn: 0
+    m_Asset: {fileID: 114791259395396098}
+    m_UnderlyingAsset: {fileID: 114791259395396098}
+    m_Duration: 2.216666666666667
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114429499786943730}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: ConversationAsset
+    m_Version: 1
+  - m_Start: 4.383333333333334
+    m_ClipIn: 0
+    m_Asset: {fileID: 114388370003496482}
+    m_UnderlyingAsset: {fileID: 114791259395396098}
+    m_Duration: 2.216666666666666
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114429499786943730}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: ConversationAsset
+    m_Version: 1
+  - m_Start: 8.05
+    m_ClipIn: 0
+    m_Asset: {fileID: 114985275275742632}
+    m_UnderlyingAsset: {fileID: 114791259395396098}
+    m_Duration: 4.033333333333333
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114429499786943730}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: ConversationAsset
+    m_Version: 1
+  - m_Start: 13.2
+    m_ClipIn: 0
+    m_Asset: {fileID: 114365373926080132}
+    m_UnderlyingAsset: {fileID: 114791259395396098}
+    m_Duration: 2.0500000000000007
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114429499786943730}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: ConversationAsset
+    m_Version: 1
 --- !u!114 &114593295131033962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -327,6 +528,25 @@ MonoBehaviour:
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
   m_RemoveStartOffset: 1
+--- !u!114 &114720097953296132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1544527758, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: Conversation
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children:
+  - {fileID: 114429499786943730}
+  m_Clips: []
 --- !u!114 &114740666357394550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -430,19 +650,7 @@ MonoBehaviour:
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -494,19 +702,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -534,19 +730,7 @@ MonoBehaviour:
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -579,6 +763,29 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: 4-SideShot
     m_Version: 1
+--- !u!114 &114791259395396098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330b6955bbe684d4783f19b2487494d8, type: 3}
+  m_Name: ConversationAsset
+  m_EditorClassIdentifier: 
+  canvasObject:
+    exposedName: 7ebf3df8fc34c4779a192605e32f2399
+    defaultValue: {fileID: 0}
+  dialogueBoxDisplay:
+    exposedName: 3ca81178e28a543bc850f59415edfb42
+    defaultValue: {fileID: 0}
+  dialogueTextDisplay:
+    exposedName: 6e6aa763eaf254d3abf88e54ead7e114
+    defaultValue: {fileID: 0}
+  dialogueBoxColor: {r: 0, g: 1, b: 0, a: 1}
+  dialogueString: Ah, fresh fruit! But where is the Fruit Vendor?
+  npcHead: {fileID: 21300000, guid: 332ca320b241242db92bd7701fa5b2ca, type: 3}
 --- !u!114 &114831819696717978
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -696,6 +903,29 @@ MonoBehaviour:
   m_Children:
   - {fileID: 114615096904629126}
   m_Clips: []
+--- !u!114 &114985275275742632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330b6955bbe684d4783f19b2487494d8, type: 3}
+  m_Name: ConversationAsset
+  m_EditorClassIdentifier: 
+  canvasObject:
+    exposedName: 18aa1763d1c3a4f45b166733a06d355a
+    defaultValue: {fileID: 0}
+  dialogueBoxDisplay:
+    exposedName: ca33eeaf8d1ca42b293987f650a40fc0
+    defaultValue: {fileID: 0}
+  dialogueTextDisplay:
+    exposedName: d83286887c124408fb1102d245e332e2
+    defaultValue: {fileID: 0}
+  dialogueBoxColor: {r: 0, g: 1, b: 0, a: 1}
+  dialogueString: Hello! Wake Up!
+  npcHead: {fileID: 21300000, guid: 332ca320b241242db92bd7701fa5b2ca, type: 3}
 --- !u!114 &114997722363854052
 MonoBehaviour:
   m_ObjectHideFlags: 1

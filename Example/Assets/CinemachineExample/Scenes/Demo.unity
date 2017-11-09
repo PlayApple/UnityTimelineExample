@@ -17991,9 +17991,9 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 305699729}
-  m_LocalRotation: {x: 0.018062431, y: 0.92980343, z: -0.046062432, w: -0.36471575}
-  m_LocalPosition: {x: 0, y: 0, z: 210.05698}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.094765574, y: 0.38368872, z: -0.03961992, w: -0.91773236}
+  m_LocalPosition: {x: 0, y: 0, z: 186.49242}
+  m_LocalScale: {x: 0.99999994, y: 1, z: 1}
   m_Children:
   - {fileID: 1916756728}
   - {fileID: 595545046}
@@ -36482,7 +36482,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3fa1b5af463db4a78a4eba9d11bd4bcb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 332ca320b241242db92bd7701fa5b2ca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -37374,6 +37374,7 @@ GameObject:
   m_Component:
   - component: {fileID: 744127163}
   - component: {fileID: 744127164}
+  - component: {fileID: 744127165}
   m_Layer: 0
   m_Name: DogInteraction
   m_TagString: Untagged
@@ -37422,6 +37423,27 @@ PlayableDirector:
   m_ExposedReferences:
     m_References:
     - f78bc8348a11e4a74963ad7e0aa978e7: {fileID: 1495866876}
+--- !u!114 &744127165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 744127162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc2d7ff3c4794bbeb2511a72e67935b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playableDirector: {fileID: 744127164}
+  playTimelineOnlyOnce: 1
+  interactKey: 0
+  disablePlayerInput: 0
+  setPlayerTimelinePosition: 0
+  playerTimelinePosition: {fileID: 0}
+  triggerZoneObject: {fileID: 1784711241}
+  displayUI: 0
+  interactDisplay: {fileID: 0}
+  playerTag: Player
 --- !u!1 &754795406
 GameObject:
   m_ObjectHideFlags: 3
@@ -44833,24 +44855,36 @@ PlayableDirector:
     value: {fileID: 0}
   m_ExposedReferences:
     m_References:
+    - 18aa1763d1c3a4f45b166733a06d355a: {fileID: 305699729}
     - 717d1065652d5484e9b9a89a275a5e5e: {fileID: 305699729}
     - c0cab0052ec9b4ec98e3f4786c100155: {fileID: 300047033}
     - e5909a4b3f3a44038a71f8534e559965: {fileID: 824079662}
     - 8f8fb83bc3a7545b5965d38dca333d3a: {fileID: 305699729}
+    - 81fe5aed5bec34e36b0ff18d728fe4ed: {fileID: 595545047}
+    - c81d730d7239c4b448af1cb28b8861d9: {fileID: 305699729}
+    - d83286887c124408fb1102d245e332e2: {fileID: 1916756730}
     - 4f3a581518d6f4b4db62a49a74bf5211: {fileID: 305699729}
     - e83131194c6274bc5b736c6d9ef41eb1: {fileID: 1916756730}
     - dfa1ac6d12ff143c086dfb13fa8b6913: {fileID: 595545047}
+    - 7ebf3df8fc34c4779a192605e32f2399: {fileID: 305699729}
     - c8db5cc2a225047a0a0375f1332e4f90: {fileID: 1916756730}
+    - 4b40e35cdb2c1430491f93cee0bfad85: {fileID: 1916756730}
     - ab48c823a4d7d4593af6f2e654107389: {fileID: 300047035}
     - 1ddfe03e0d62446239c0e83e5ac6a39c: {fileID: 1688074962}
     - 0f670be724f64455ea2efecabdb32422: {fileID: 1916756730}
     - ca5393e6d06e04509b31ae4668a7c035: {fileID: 1688074962}
     - 3a7fc5e6d614945928bd7dbf930fdd9f: {fileID: 1916756730}
     - c348e27804d44469f9511b2eb2743d36: {fileID: 595545047}
+    - d1d60b4d5ab0a43e8a3fe8f9395656c9: {fileID: 1916756730}
+    - 3ca81178e28a543bc850f59415edfb42: {fileID: 595545047}
+    - ca33eeaf8d1ca42b293987f650a40fc0: {fileID: 595545047}
+    - 9a72b36f8353547b1bccd3094dc868f8: {fileID: 305699729}
     - 389faf026fa414068ad0ded083add1d9: {fileID: 595545047}
     - 7514541e601184906949cf239a3b279c: {fileID: 595545047}
     - 81b6f1b2cb10c4614914a291b1f2ae5a: {fileID: 305699729}
     - ed291403977b84c83ab78db187fd3d31: {fileID: 758999106}
+    - 6e6aa763eaf254d3abf88e54ead7e114: {fileID: 1916756730}
+    - 96c603e7f19d3408d91bfb75cea41189: {fileID: 595545047}
     - 895cb3b3cd9bd41258431bfff19944ff: {fileID: 1648709829}
 --- !u!114 &911107941
 MonoBehaviour:
@@ -68154,7 +68188,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1643065606}
-  m_LocalRotation: {x: 0.017377099, y: 0.93511176, z: -0.046325322, w: 0.35088181}
+  m_LocalRotation: {x: 0.0173771, y: 0.9351118, z: -0.046325326, w: 0.35088181}
   m_LocalPosition: {x: -2.649216, y: 2.05981, z: 4.201756}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -69010,6 +69044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1784711242}
   - component: {fileID: 1784711243}
+  - component: {fileID: 1784711244}
   m_Layer: 0
   m_Name: EventTriggerZone
   m_TagString: Untagged
@@ -69037,11 +69072,24 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1784711241}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1784711244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1784711241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b017ed8270fc94cbb8e4a4ae4ac34815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timelinePlaybackManager: {fileID: 744127165}
+  playerString: Player
 --- !u!1 &1795673349
 GameObject:
   m_ObjectHideFlags: 0
@@ -76630,7 +76678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -76650,7 +76698,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Red Herring and Radioactive Tuna.
+  m_Text: Ah, fresh fruit! But where is the Fruit Vendor?
 --- !u!222 &1916756731
 CanvasRenderer:
   m_ObjectHideFlags: 0
