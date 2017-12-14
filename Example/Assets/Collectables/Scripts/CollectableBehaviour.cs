@@ -5,60 +5,67 @@ using UnityEngine.Timeline;
 using UnityEngine.Playables;
 using UnityStandardAssets.Characters.ThirdPerson;
 
-public class CollectableBehaviour : MonoBehaviour {
-	[Header("Playable Director References")]
+public class CollectableBehaviour : MonoBehaviour
+{
+	[Header ("Playable Director References")]
 	public PlayableDirector idleTimeline;
 	public PlayableDirector collectedTimeline;
 
-	[Header("Collider")]
+	[Header ("Collider")]
 	public Collider collectableCollider;
 
-	[Header("Player Settings")]
+	[Header ("Player Settings")]
 	public string playerTag;
-	private GameObject player;
-	private ThirdPersonUserControl thirdPersonUserControl;
-	private PlayerCutsceneSpeedController playerCutsceneSpeedController;
 	public string playerAnimationTrackName;
 
+	private GameObject m_player;
+	private ThirdPersonUserControl m_thirdPersonUserControl;
+	private PlayerCutsceneSpeedController m_playerCutsceneSpeedController;
+
+
 	// Use this for initialization
-	void Start () {
-		player = GameObject.FindWithTag (playerTag);
-		thirdPersonUserControl = player.GetComponent<ThirdPersonUserControl> ();
-		playerCutsceneSpeedController = player.GetComponent<PlayerCutsceneSpeedController> ();
+	void Start ()
+	{
+		m_player = GameObject.FindWithTag (playerTag);
+		m_thirdPersonUserControl = m_player.GetComponent<ThirdPersonUserControl> ();
+		m_playerCutsceneSpeedController = m_player.GetComponent<PlayerCutsceneSpeedController> ();
 		BindPlayerToAnimationTrack ();
 	}
-	
-	void BindPlayerToAnimationTrack(){
-		//Loop through timeline tracks and find the desired track to bind the player to
+
+	void BindPlayerToAnimationTrack ()
+	{
 		foreach (var playableAssetOutput in collectedTimeline.playableAsset.outputs) {
 			if (playableAssetOutput.streamName == playerAnimationTrackName) {
-				collectedTimeline.SetGenericBinding (playableAssetOutput.sourceObject, player);
+				collectedTimeline.SetGenericBinding (playableAssetOutput.sourceObject, m_player);
 			}
 		}
 	}
 
-	void OnTriggerEnter(Collider theCollider){
-		if (theCollider.gameObject == player) {
+	void OnTriggerEnter (Collider theCollider)
+	{
+		if (theCollider.gameObject == m_player) {
 			collectableCollider.enabled = false;
 			SetPlayerRotationTowardsCollectable ();
 			idleTimeline.Stop ();
 			collectedTimeline.Play ();
-			StartCoroutine(TimelineLifeCoroutine());
+			StartCoroutine (TimelineLifeCoroutine ());
 		}
 	}
 
-	void SetPlayerRotationTowardsCollectable(){
+	void SetPlayerRotationTowardsCollectable ()
+	{
 
-		Vector3 lookDirection = transform.position - player.transform.position;
+		Vector3 lookDirection = transform.position - m_player.transform.position;
 		lookDirection.y = 0;
-		player.transform.rotation = Quaternion.LookRotation (lookDirection);
+		m_player.transform.rotation = Quaternion.LookRotation (lookDirection);
 	}
 
-	IEnumerator TimelineLifeCoroutine(){
-		playerCutsceneSpeedController.SetPlayerSpeed ();
-		thirdPersonUserControl.inputAllowed = false;
-		yield return new WaitForSeconds((float)collectedTimeline.duration);
-		thirdPersonUserControl.inputAllowed = true;
+	IEnumerator TimelineLifeCoroutine ()
+	{
+		m_playerCutsceneSpeedController.SetPlayerSpeed ();
+		m_thirdPersonUserControl.inputAllowed = false;
+		yield return new WaitForSeconds ((float)collectedTimeline.duration);
+		m_thirdPersonUserControl.inputAllowed = true;
 		Destroy (gameObject);
 	}
 }

@@ -2,20 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectableSpawner : MonoBehaviour {
+public class CollectableSpawner : MonoBehaviour
+{
 	public GameObject[] collectablesToSpawn;
 	public KeyCode spawnKey;
 	public int xRange;
 	public int zRange;
 	public int yHeight;
 
-	void Update(){
+	void Update ()
+	{
 		if (Input.GetKeyDown (spawnKey)) {
 			SpawnObject ();
 		}
 	}
 
-	void SpawnObject(){
+	void SpawnObject ()
+	{
 		int randomCollectable = Random.Range (0, collectablesToSpawn.Length);
 		int xPosition = Random.Range (-xRange, xRange);
 		int zPosition = Random.Range (-zRange, zRange);
